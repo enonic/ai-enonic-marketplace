@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "enonic-marketplace",
+  "metadata": {
+    "description": "Enonic's marketplace of Claude Code plugins"
+  },
+  "owner": {
+    "name": "Enonic",
+    "email": "hello@enonic.com"
+  },
+  "plugins": [
+    {
+      "name": "agent-skills",
+      "source": "./plugins/agent-skills",
+      "description": "Agent skills for Enonic XP application development",
+      "version": "0.1.0",
+      "author": {
+        "name": "Enonic",
+        "email": "hello@enonic.com"
+      },
+      "category": "development"
+    }
+  ]
+}
