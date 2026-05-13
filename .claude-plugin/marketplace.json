@@ -10,8 +10,8 @@
   },
   "plugins": [
     {
-      "name": "agent-skills",
-      "source": "./plugins/agent-skills",
+      "name": "enonic-skills",
+      "source": "./plugins/enonic-skills",
       "description": "Agent skills for Enonic XP application development",
       "version": "0.1.0",
       "author": {

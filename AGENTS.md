@@ -7,7 +7,7 @@ Enonic plugins for AI coding agents, following the [Agent Skills specification](
 ```
 .claude-plugin/marketplace.json       # Claude Code marketplace registry
 plugins/
-  agent-skills/
+  enonic-skills/
     .claude-plugin/plugin.json        # Plugin manifest
     skills/
       xp-app-upgrader/SKILL.md        # compatibility: Claude Code, Codex
@@ -21,7 +21,7 @@ Each skill is a self-contained directory with a `SKILL.md` (YAML frontmatter + M
 
 ```
 /plugin marketplace add enonic/ai-enonic-marketplace
-/plugin install agent-skills@enonic-marketplace
+/plugin install enonic-skills@enonic-marketplace
 ```
 
 ## Use with Codex
@@ -31,14 +31,14 @@ Install a skill directly from this repo into `~/.codex/skills`:
 ```bash
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo enonic/ai-enonic-marketplace \
-  --path plugins/agent-skills/skills/xp-app-upgrader
+  --path plugins/enonic-skills/skills/xp-app-upgrader
 ```
 
 Only skills whose frontmatter includes `Codex` in the `compatibility` field are supported on Codex.
 
 ## Use with other agents
 
-Any agent that follows the Agent Skills specification can load `SKILL.md` files directly from `plugins/agent-skills/skills/<skill-name>/`.
+Any agent that follows the Agent Skills specification can load `SKILL.md` files directly from `plugins/enonic-skills/skills/<skill-name>/`.
 The skill body uses Claude Code tool names; agents on other platforms should map them to their equivalent tools.
 
 ## Writing skills for this marketplace
